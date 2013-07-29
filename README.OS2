@@ -1,0 +1,40 @@
+
+This is OS/2 port of UN*X cmp utility, based on FreeBSD source
+distribution. Some GNU configure scripts use cmp utility, but it 
+has not been ported to OS/2 so far, AFAIK.
+
+INSTALLATION
+
+Copy cmp.exe to a directory in the path. Requires emx.dll v 0.9d or later.
+
+DOCUMENTATION
+
+cmp.1 was ok for me
+
+DIRECTIONS AND LEGAL STUFF
+
+Original source files come from ftp directory:
+
+ftp://ftp.dk.freebsd.org/pub/FreeBSD/branches/3.0-stable/src/usr.bin/cmp/
+
+Individual library include files come from:
+ftp://ftp.dk.freebsd.org/pub/FreeBSD/branches/3.0-stable/src/include/err.h
+ftp://ftp.dk.freebsd.org/pub/FreeBSD/branches/3.0-stable/src/sys/sys/cdefs.h
+ftp://ftp.dk.freebsd.org/pub/FreeBSD/branches/3.0-stable/src/sys/i386/include/ansi.h
+
+Source files were modified and compiled with pgcc-2.95.2.
+Terms of modification, use and distribution of FreeBSD-derived source files and
+cmp.exe program are covered in COPYING.BSD. All disclaimers concerning 'CONTRIBUTORS'
+in COPYING.BSD shall apply nonexclusively to me (Yuri Baranov, <baranov@mail.com>).
+
+The modification and distribution of err.c file falls under GNU GENERAL PUBLIC LICENSE,
+provided in COPYING text file.
+
+BUILDING
+
+Enclosed Makefile tested with nmake, dmake, GNU make.
+
+
+Yuri Baranov, baranov@mail.com
+
+
